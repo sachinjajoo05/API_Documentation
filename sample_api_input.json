@@ -1,0 +1,16 @@
+{
+  "api_name": "User Registration",
+  "method": "POST",
+  "endpoint": "/api/v1/users/register",
+  "description": "Creates a new user account in the system with email verification",
+  "parameters": {
+    "email": "string - User's email address (required, must be valid format)",
+    "password": "string - User's password (required, min 8 characters, must contain uppercase, lowercase, and number)",
+    "username": "string - Unique username (required, 3-20 characters, alphanumeric only)",
+    "first_name": "string - User's first name (required)",
+    "last_name": "string - User's last name (required)",
+    "phone": "string - Phone number with country code (optional)",
+    "date_of_birth": "string - Date in YYYY-MM-DD format (optional)",
+    "preferences": "object - User preferences for notifications and privacy (optional)"
+  }
+}
